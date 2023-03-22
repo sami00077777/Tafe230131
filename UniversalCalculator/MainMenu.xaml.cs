@@ -28,7 +28,7 @@ namespace Calculator
         }
 		private void OnMortgageCalculatorButtonClick(object sender, RoutedEventArgs e)
 		{
-			//this.Frame.Navigate(typeof(MortgageCalc));
+			this.Frame.Navigate(typeof(MortgageCalculator));
 		}
 	}
 }

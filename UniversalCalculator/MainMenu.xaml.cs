@@ -35,5 +35,10 @@ namespace Calculator
 		{
 			this.Frame.Navigate(typeof(CurrencyConversionCalculator));
 		}
+		private void onMathCalculatorClick(object sender, RoutedEventArgs e)
+			{
+			this.Frame.Navigate(typeof(MainPage));
+		}
+
 	}
 }

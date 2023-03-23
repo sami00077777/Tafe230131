@@ -11,7 +11,7 @@
 	<Grid>
 		<StackPanel Orientation="Vertical" HorizontalAlignment="Center" Margin="0,50">
 			<TextBlock Text="Universal Calculator" HorizontalAlignment="Center" FontSize="60"/>
-			<Button Content="Math Calculator" FontSize="24" Width="250" Height="80" Margin="0,40,0,40" HorizontalAlignment="Center"/>
+			<Button Content="Math Calculator" FontSize="24" Width="250" Height="80" Margin="0,40,0,40" HorizontalAlignment="Center" Click="onMathCalculatorClick"/>
 			<Button Content="Mortgage Calculator" FontSize="24" Width="250" Height="80" Margin="0,40,0,40" HorizontalAlignment="Center" Click="OnMortgageCalculatorButtonClick"/>
 			<Button Content="Currency Calculator" FontSize="24" Width="250" Height="80" Margin="0,40,0,40" HorizontalAlignment="Center" Click="Button_Click"/>
 			<Button Content="Exit" FontSize="24" Width="250" Height="80" Margin="0,40,0,40" HorizontalAlignment="Center"/>

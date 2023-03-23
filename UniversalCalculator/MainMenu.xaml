@@ -13,7 +13,7 @@
 			<TextBlock Text="Universal Calculator" HorizontalAlignment="Center" FontSize="60"/>
 			<Button Content="Math Calculator" FontSize="24" Width="250" Height="80" Margin="0,40,0,40" HorizontalAlignment="Center"/>
 			<Button Content="Mortgage Calculator" FontSize="24" Width="250" Height="80" Margin="0,40,0,40" HorizontalAlignment="Center" Click="OnMortgageCalculatorButtonClick"/>
-			<Button Content="Currency Calculator" FontSize="24" Width="250" Height="80" Margin="0,40,0,40" HorizontalAlignment="Center"/>
+			<Button Content="Currency Calculator" FontSize="24" Width="250" Height="80" Margin="0,40,0,40" HorizontalAlignment="Center" Click="Button_Click"/>
 			<Button Content="Exit" FontSize="24" Width="250" Height="80" Margin="0,40,0,40" HorizontalAlignment="Center"/>
 		</StackPanel>
 		<Image Grid.Column="1" Source="abacus.png" Width="80" Height="80" Margin="0,50,50,0" HorizontalAlignment="Right" VerticalAlignment="Top" />

@@ -1,0 +1,41 @@
+﻿<Page
+    x:Class="Calculator.CurrencyConversionCalculator"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Calculator"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="179*"/>
+            <RowDefinition Height="21*"/>
+        </Grid.RowDefinitions>
+        <TextBlock x:Name="Heading" HorizontalAlignment="Center" Margin="0,118,0,0" TextWrapping="Wrap" Text="Currency Conversion Calculator" VerticalAlignment="Top" Height="62" Width="930" TextAlignment="Center" FontSize="36" FontWeight="Bold"/>
+        <TextBlock x:Name="Heading_Amount" HorizontalAlignment="Left" Margin="100,245,0,0" TextWrapping="Wrap" Text="Amount $" VerticalAlignment="Top" Height="55" Width="200" TextAlignment="Center" FontSize="36"/>
+        <TextBlock x:Name="Heading_From" HorizontalAlignment="Center" Margin="0,245,0,0" TextWrapping="Wrap" Text="From" VerticalAlignment="Top" Height="55" Width="200" TextAlignment="Center" FontSize="36"/>
+        <TextBlock x:Name="Heading_To" HorizontalAlignment="Right" Margin="0,245,100,0" TextWrapping="Wrap" Text="To" VerticalAlignment="Top" Height="55" Width="200" TextAlignment="Center" FontSize="36"/>
+		<TextBox x:Name="TextBox_EnterAmount" Text ="100 " HorizontalAlignment="Left" Margin="100,335,0,0" Width="256" Height="50" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="24" TextChanged="TextBox_EnterAmount_TextChanged"/>
+		<ComboBox x:Name="ComboBox_From" Margin="0,335,0,0" Width="256" HorizontalAlignment="Center" Height="50" FontSize="24" SelectionChanged="ComboBox_From_SelectionChanged" >
+			<x:String>US Dollar</x:String>
+			<x:String>Euro</x:String>
+			<x:String>Brittish Pound</x:String>
+			<x:String>Indian Rupee</x:String>
+		</ComboBox>
+		<ComboBox x:Name="ComboBox_To" Margin="0,335,100,0" Width="256" HorizontalAlignment="Right" Height="50" FontSize="24" SelectionChanged="ComboBox_To_SelectionChanged" >
+			<x:String>US Dollar</x:String>
+			<x:String>Euro</x:String>
+			<x:String>Brittish Pound</x:String>
+			<x:String>Indian Rupee</x:String>
+		</ComboBox>
+		<TextBlock x:Name="TextBlock_ToConvert" HorizontalAlignment="Left" Margin="100,400,0,0" TextWrapping="Wrap" Text="======" VerticalAlignment="Top" Height="55" Width="500" TextAlignment="left" FontSize="20"/>
+		<TextBlock x:Name="TextBlock_Conversion" HorizontalAlignment="Left" Margin="100,470,0,0" TextWrapping="Wrap" Text="$748.473945757393 Brittish Pounds" VerticalAlignment="Top" Height="55" Width="800" TextAlignment="left" FontSize="36"/>
+		<TextBlock x:Name="TextBlock_ConversionFrom" HorizontalAlignment="Left" Margin="100,540,0,0" TextWrapping="Wrap" Text="======" VerticalAlignment="Top" Height="55" Width="500" TextAlignment="left" FontSize="20"/>
+		<TextBlock x:Name="TextBlock_ConversionTo" HorizontalAlignment="Left" Margin="100,600,0,0" TextWrapping="Wrap" Text="======" VerticalAlignment="Top" Height="55" Width="500" TextAlignment="left" FontSize="20"/>
+		<Button x:Name="Button_Convert_Currency" Content="Currency conversion" HorizontalAlignment="Center" Margin="0,700,0,0" VerticalAlignment="Top" Height="70" Width="350" FontSize="36" Click="Button_Convert_Currency_Click"/>
+		<Button x:Name="Button_Exit" Content="Exit" Margin="0,800,0,0" VerticalAlignment="Top" Height="70" Width="255" HorizontalAlignment="Center" Click="Button_Exit_Click" FontSize="36"/>
+		
+	</Grid>
+</Page>
